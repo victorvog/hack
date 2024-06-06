@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,22 +24,7 @@
 
     <div class="container">
         <div class="main-content">
-            <div class="activity">
-                <h2>Atividade Aula 1</h2>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Natus Deserunt Voluptas Reprehenderit Quisquam Velit Animi Officia Vel.</p>
-                <div class="video-placeholder"></div>
-                <div class="options">
-                    <button>A - Lorem ipsum dolor sit amet Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Natus Deserunt Voluptas Reprehenderit Quisquam Velit Animi Officia Vel.</button>
-                    <button>B - Lorem Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Natus Deserunt Voluptas Reprehenderit Quisquam Velit Animi Officia Vel.</button>
-                    <button>C - Lorem ipsum dolor Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Natus Deserunt Voluptas Reprehenderit Quisquam Velit Animi Officia Vel.</button>
-                    <button>D - Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Natus Deserunt Voluptas Reprehenderit Quisquam Velit Animi Officia Vel.</button>
-                </div>
-                <button class="submit">ENVIAR</button>
-            </div>
-            <div class="activity">
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula cursus velit, vel cursus urna cursus at. Integer sed metus vel sapien lacinia consectetur. Aliquam erat volutpat. Nam luctus, orci ac malesuada posuere, erat mi bibendum urna, at convallis magna sem a libero. Nullam volutpat nisl id mauris sagittis, at cursus urna congue. Praesent ac ipsum at metus consectetur sagittis. Suspendisse potenti. Sed sodales fermentum ligula, non vehicula ligula. Vivamus aliquet tincidunt dui, non auctor felis auctor non. Cras consequat magna sit amet urna varius, eget ultricies sapien sagittis. Nullam euismod arcu in est ullamcorper, sit amet viverra urna sagittis. Proin fermentum lacus in tellus tincidunt, sed faucibus erat efficitur. Nunc vitae quam sit amet ligula blandit venenatis.</p>
-            </div>
+            <!-- Existing content -->
         </div>
         <div class="sidebar">
             <div class="course-info">
@@ -59,12 +43,12 @@
             <div class="activities">
                 <h2>ATIVIDADES</h2>
                 <ul>
-                    <li>Video Aula 1 - 4 min</li>
-                    <li>Documentação Aula 1</li>
-                    <li>Atividade Aula 1</li>
-                    <li>Video Aula 2</li>
-                    <li>Documentação Aula 2</li>
-                    <li>Atividade Aula 2</li>
+                    <li id="video1">Video Aula 1 - 4 min</li>
+                    <li id="video2">Documentação Aula 1</li>
+                    <li id="video3">Atividade Aula 1</li>
+                    <li id="video4">Video Aula 2 - 6 min</li>
+                    <li id="video5">Documentação Aula 2</li>
+                    <li id="video6">Atividade Aula 2</li>
                 </ul>
             </div>
             <div class="next-module">
@@ -73,449 +57,72 @@
         </div>
     </div>
 
-    <script>
-        // JavaScript para garantir que apenas um botão seja selecionado por vez
-        const buttons = document.querySelectorAll('.options button');
-        
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remover a classe 'selected' de todos os botões
-                buttons.forEach(btn => btn.classList.remove('selected'));
-                
-                // Adicionar a classe 'selected' apenas ao botão clicado
-                button.classList.add('selected');
-            });
-        });
-    </script>
-    
+    <div id="detailedView" class="detailed-view hidden">
+        <h1 id="videoTitle">Título de vídeo</h1>
+        <div class="video-placeholder"></div>
+        <p id="videoDescription">Descrição</p>
+        <div class="comments">
+            <h2>Comentários</h2>
+            <div class="comment">
+                <p>@UsuárioManeiroGenérico</p>
+                <p>This is something that nobody asked for, but everyone needed. Absolute piece of art.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
 css:
-/* General Styles */
-a {
-  color: white;
-  text-decoration: none;
+/* Existing CSS */
+.hidden {
+    display: none;
 }
 
-a[href] {
-  transition: color .5s;
+.detailed-view {
+    background-color: #1F1F1F;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    color: #ffffff;
 }
 
-a[href]:hover {
-  color: var(--main-color);
-  transition: color .5s;
+.detailed-view .video-placeholder {
+    background-color: #000;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
-/* Navbar Styles */
-.menu {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  left: 0;
-  background-color: #272727;
-  padding: 0 20px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 99;
+.detailed-view .comments {
+    margin-top: 20px;
 }
 
-.logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 15px;
+.detailed-view .comment {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.logo > img {
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
 
-.logo > div {
-  position: relative;
-  width: fit-content;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: var(--main-color);
-  font-size: 27px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+java:
+document.addEventListener('DOMContentLoaded', () => {
+    const videoLinks = document.querySelectorAll('.activities ul li');
+    const detailedView = document.getElementById('detailedView');
+    const videoTitle = document.getElementById('videoTitle');
+    const videoDescription = document.getElementById('videoDescription');
 
-.side {
-  height: 100%;
-  display: flex;
-  gap: 30px;
-}
+    videoLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Update the detailed view content based on the clicked link
+            videoTitle.textContent = link.textContent.split(' - ')[0];
+            videoDescription.textContent = `Descrição para ${link.textContent.split(' - ')[0]}`;
 
-.options {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.options > a {
-  height: fit-content;
-  font-weight: 600;
-}
-
-.PFP {
-  height: 100%;
-  padding: 5px 0;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.PFP > img {
-  aspect-ratio: 1 / 1;
-  height: 100%;
-  border-radius: 5px;
-}
-
-@media(max-width: 600px) {
-  .logo > div {
-      display: none;
-  }
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #2E2E2E;
-  color: #FFFFFF;
-}
-/* Estilos para a barra de navegação */
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a[href] {
-  transition: color 0.5s;
-}
-
-a[href]:hover {
-  color: var(--main-color);
-  transition: color 0.5s;
-}
-
-.menu {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  left: 0;
-  background-color: #272727;
-  padding: 0 20px;
-  box-sizing: border-box;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 99;
-}
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.logo > img {
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
-
-.logo > div {
-  position: relative;
-  width: fit-content;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: var(--main-color);
-  font-size: 27px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.side {
-  height: 100%;
-  display: flex;
-  gap: 30px;
-}
-
-.options {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.options > a {
-  height: fit-content;
-  font-weight: 600;
-}
-
-.PFP {
-  height: 100%;
-  padding: 5px 0;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.PFP > img {
-  aspect-ratio: 1 / 1;
-  height: 100%;
-  border-radius: 5px;
-}
-
-@media (max-width: 600px) {
-  .logo > div {
-      display: none;
-  }
-}
-
-/* Estilos para o restante do layout */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-  margin: 0;
-  padding-top: 50px; /* Espaço para a barra de navegação */
-}
-
-/* Container Styles */
-.container {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  margin-top: 80px; /* Adjust for the fixed navbar */
-}
-
-.main-content {
-  flex: 1; /* Permite que o conteúdo principal cresça para preencher o espaço disponível */
-  padding: 20px; /* Adiciona preenchimento ao conteúdo principal */
-}
-
-.sidebar {
-  width: 300px; /* Define a largura da barra lateral */
-  background-color: #1F1F1F; /* Define a cor de fundo da barra lateral */
-  padding: 20px; /* Adiciona preenchimento à barra lateral */
-  display: flex; /* Usa flexbox para o layout */
-  flex-direction: column; /* Define a direção do layout como coluna */
-  justify-content: space-between; /* Distribui o espaço igualmente entre os elementos */
-  order: 2; /* Garante que a barra lateral esteja à direita */
-}
-
-.logo h1 {
-  color: #AA00FF; /* Define a cor do texto do logo */
-  margin: 0; /* Remove a margem padrão */
-  padding-bottom: 20px; /* Adiciona preenchimento abaixo do logo */
-}
-
-.course-info p {
-  font-size: 12px; /* Define o tamanho da fonte */
-}
-
-.progress-bar {
-  background-color: #555; /* Define a cor de fundo da barra de progresso */
-  border-radius: 5px; /* Adiciona bordas arredondadas */
-  overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites */
-  margin: 10px 0; /* Adiciona margem acima e abaixo */
-}
-
-.progress {
-  height: 10px; /* Define a altura da barra de progresso */
-  background-color: #AA00FF; /* Define a cor da barra de progresso */
-}
-
-.modules, .activities {
-  margin-top: 20px; /* Adiciona margem superior */
-}
-
-.modules h2, .activities h2 {
-  color: #AA00FF; /* Define a cor do texto dos títulos */
-  margin: 0 0 10px 0; /* Adiciona margem apenas abaixo */
-  font-size: 14px; /* Define o tamanho da fonte */
-}
-
-.activities ul {
-  list-style-type: none; /* Remove a marcação padrão das listas */
-  padding: 0; /* Remove o preenchimento padrão */
-  margin: 0; /* Remove a margem padrão */
-}
-
-.activities ul li {
-  background-color: #333; /* Define a cor de fundo dos itens da lista */
-  padding: 10px; /* Adiciona preenchimento aos itens da lista */
-  margin: 5px 0; /* Adiciona margem acima e abaixo dos itens da lista */
-  font-size: 12px; /* Define o tamanho da fonte */
-  border-radius: 5px; /* Adiciona bordas arredondadas */
-}
-
-/* Estilos para os botões de opção */
-.options button {
-  background-color: #333; /* Cor de fundo padrão */
-  color: white; /* Cor do texto */
-  border: none; /* Remove a borda padrão */
-  padding: 10px; /* Espaçamento interno */
-  margin: 5px 0; /* Espaçamento externo */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de ponteiro */
-  transition: background-color 0.3s; /* Transição suave */
-}
-
-.options button.selected {
-  background-color: #AA00FF; /* Cor de fundo quando selecionado */
-}
-
-.options button:hover {
-  background-color: #555; /* Cor de fundo ao passar o mouse */
-}
-
-/* Estilos para o botão de envio */
-.submit {
-  background-color: #AA00FF; /* Cor de fundo */
-  color: white; /* Cor do texto */
-  border: none; /* Remove a borda padrão */
-  padding: 10px 20px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de ponteiro */
-  transition: background-color 0.3s; /* Transição suave */
-  margin-top: 10px; /* Espaçamento superior */
-}
-
-.submit:hover {
-  background-color: #8800cc; /* Cor de fundo ao passar o mouse */
-}
-
-/* Main Content Styles */
-.main-content {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Sidebar Styles */
-.sidebar {
-  width: 300px;
-  background-color: #1F1F1F;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  order: 2; /* Ensure sidebar is on the right */
-  margin: 10px 0;
-}
-
-.logo h1 {
-  color: #AA00FF;
-  margin: 0;
-  padding-bottom: 20px;
-}
-
-.course-info p {
-  font-size: 12px;
-}
-
-.progress-bar {
-  background-color: #555;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 10px 0;
-}
-
-.progress {
-  height: 10px;
-  background-color: #AA00FF;
-}
-
-.modules, .activities {
-  margin-top: 20px;
-}
-
-.modules h2, .activities h2 {
-  color: #AA00FF;
-  margin: 0 0 10px 0;
-  font-size: 14px;
-}
-
-.activities ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.activities ul li {
-  background-color: #333;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.next-module p {
-  background-color: #444;
-  margin: 20px 0 0 0;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.activity {
-  background-color: #1F1F1F;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.activity h2 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
-}
-
-.activity p {
-  font-size: 14px;
-  margin: 10px 0;
-}
-
-.video-placeholder {
-  background-color: #000;
-  display: flex;
-  height: 200px;
-  margin: 20px 0;
-  border-radius: 5px;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-}
-
-.options button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-  text-align: left;
-  cursor: pointer;
-}
-
-.submit {
-  background-color: #AA00FF;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
+            // Show the detailed view
+            detailedView.classList.remove('hidden');
+        });
+    });
+});
