@@ -1,0 +1,879 @@
+.pgina-inicial {
+    background-color: #303030;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .pgina-inicial .div {
+    background-color: #303030;
+    overflow: hidden;
+    width: 1440px;
+    height: 2554px;
+    position: relative;
+  }
+  
+  .pgina-inicial .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 397px;
+    top: 65px;
+    left: 0;
+    background-color: #000000;
+  }
+  
+  .pgina-inicial .rectangle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 168px;
+    left: 1356px;
+    background-color: #282828;
+    border-radius: 100px;
+  }
+  
+  .pgina-inicial .group {
+    position: absolute;
+    width: 82px;
+    height: 18px;
+    top: 362px;
+    left: 679px;
+  }
+  
+  .pgina-inicial .rectangle-2 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-color: #282828;
+    border-radius: 100px;
+  }
+  
+  .pgina-inicial .rectangle-3 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 21px;
+    background-color: #303030;
+    border-radius: 100px;
+  }
+  
+  .pgina-inicial .rectangle-4 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 42px;
+    background-color: #303030;
+    border-radius: 100px;
+  }
+  
+  .pgina-inicial .rectangle-5 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 64px;
+    background-color: #303030;
+    border-radius: 100px;
+  }
+  
+  .pgina-inicial .overlap-group {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 168px;
+    left: 20px;
+    border-radius: 100px;
+  }
+  
+  .pgina-inicial .rectangle-6 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: #282828;
+    border-radius: 100px;
+    transform: rotate(-180deg);
+  }
+  
+  .pgina-inicial .sort-right {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 13px;
+    left: 13px;
+  }
+  
+  .pgina-inicial .anuncions-dos-cursos {
+    position: absolute;
+    top: 170px;
+    left: 457px;
+    font-family: "Istok Web-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .anuncions-das-wrapper {
+    position: absolute;
+    width: 1389px;
+    height: 262px;
+    top: 1645px;
+    left: 33px;
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  
+  .pgina-inicial .anuncions-das {
+    position: absolute;
+    top: 110px;
+    left: 424px;
+    font-family: "Istok Web-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .overlap-2 {
+    position: absolute;
+    width: 1440px;
+    height: 190px;
+    top: 2364px;
+    left: -5px;
+    background-color: #000000;
+  }
+  
+  .pgina-inicial .whats-app {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 124px;
+    left: 1315px;
+  }
+  
+  .pgina-inicial .layer {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 124px;
+    left: 1187px;
+  }
+  
+  .pgina-inicial .img {
+    position: absolute;
+    width: 42px;
+    height: 38px;
+    top: 128px;
+    left: 1251px;
+  }
+  
+  .pgina-inicial .frame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 580px;
+    align-items: flex-end;
+    gap: 0px 21px;
+    position: absolute;
+    top: 48px;
+    left: 430px;
+  }
+  
+  .pgina-inicial .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--cold-greywhite);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pgina-inicial .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pgina-inicial .p {
+    position: absolute;
+    height: 14px;
+    top: 94px;
+    left: 1200px;
+    font-family: "Roboto-Light", Helvetica;
+    font-weight: 300;
+    color: var(--cold-greywhite);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pgina-inicial .menu {
+    position: absolute;
+    width: 1440px;
+    height: 65px;
+    top: 0;
+    left: 0;
+    background-color: #272727;
+  }
+  
+  .pgina-inicial .falcon {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    top: 5px;
+    left: 10px;
+  }
+  
+  .pgina-inicial .text-wrapper-3 {
+    position: absolute;
+    top: 15px;
+    left: 85px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #8241aa;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .text-wrapper-4 {
+    position: absolute;
+    top: 20px;
+    left: 662px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pgina-inicial .planos {
+    position: absolute;
+    top: 19px;
+    left: 798px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pgina-inicial .home {
+    position: absolute;
+    top: 19px;
+    left: 557px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pgina-inicial .overlap-group-2 {
+    position: absolute;
+    width: 35px;
+    height: 34px;
+    top: 14px;
+    left: 1383px;
+  }
+  
+  .pgina-inicial .account-avatar-face {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 0;
+  }
+  
+  .pgina-inicial .layer-2 {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 8px;
+    left: 9px;
+  }
+  
+  .pgina-inicial .text-wrapper-5 {
+    position: absolute;
+    top: 16px;
+    left: 1211px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+    padding: 5px;
+    position: absolute;
+    top: 11px;
+    left: 1114px;
+    background-color: #e6e6e6;
+  }
+  
+  .pgina-inicial .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #492360;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .group-2 {
+    position: absolute;
+    width: 1613px;
+    height: 351px;
+    top: 496px;
+    left: 20px;
+  }
+  
+  .pgina-inicial .overlap-wrapper {
+    position: absolute;
+    width: 392px;
+    height: 309px;
+    top: 42px;
+    left: 7px;
+  }
+  
+  .pgina-inicial .overlap-3 {
+    position: relative;
+    width: 400px;
+    height: 309px;
+    left: -4px;
+  }
+  
+  .pgina-inicial .rectangle-7 {
+    position: absolute;
+    width: 400px;
+    height: 228px;
+    top: 0;
+    left: 0;
+  }
+  
+  .pgina-inicial .group-3 {
+    width: 205px;
+    position: absolute;
+    height: 82px;
+    top: 227px;
+    left: 5px;
+  }
+  
+  .pgina-inicial .star {
+    left: 0;
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 66px;
+  }
+  
+  .pgina-inicial .star-2 {
+    left: 20px;
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 66px;
+  }
+  
+  .pgina-inicial .star-3 {
+    left: 40px;
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 66px;
+  }
+  
+  .pgina-inicial .star-4 {
+    left: 60px;
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 66px;
+  }
+  
+  .pgina-inicial .star-5 {
+    left: 80px;
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 66px;
+  }
+  
+  .pgina-inicial .text-wrapper-7 {
+    position: absolute;
+    top: 66px;
+    left: 102px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .carga-hor-ria-horas {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .text-wrapper-8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .overlap-group-wrapper {
+    position: absolute;
+    width: 166px;
+    height: 55px;
+    top: 157px;
+    left: 228px;
+  }
+  
+  .pgina-inicial .overlap-group-3 {
+    position: relative;
+    width: 162px;
+    height: 55px;
+  }
+  
+  .pgina-inicial .rectangle-8 {
+    position: absolute;
+    width: 156px;
+    height: 46px;
+    top: 5px;
+    left: 6px;
+  }
+  
+  .pgina-inicial .div-2 {
+    position: absolute;
+    width: 70px;
+    height: 55px;
+    top: 0;
+    left: 0;
+    background-color: #8241aa;
+    border-radius: 5px;
+  }
+  
+  .pgina-inicial .text-wrapper-9 {
+    position: absolute;
+    width: 58px;
+    top: 16px;
+    left: 6px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .modulo-aula {
+    position: absolute;
+    top: 9px;
+    left: 83px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .overlap-4 {
+    position: absolute;
+    width: 796px;
+    height: 309px;
+    top: 42px;
+    left: 411px;
+  }
+  
+  .pgina-inicial .group-4 {
+    position: absolute;
+    width: 422px;
+    height: 309px;
+    top: 0;
+    left: 0;
+  }
+  
+  .pgina-inicial .overlap-5 {
+    position: relative;
+    width: 432px;
+    height: 309px;
+    left: -4px;
+  }
+  
+  .pgina-inicial .group-5 {
+    position: absolute;
+    width: 427px;
+    height: 82px;
+    top: 227px;
+    left: 5px;
+  }
+  
+  .pgina-inicial .star-6 {
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    top: 66px;
+    left: 0;
+  }
+  
+  .pgina-inicial .star-7 {
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    top: 66px;
+    left: 22px;
+  }
+  
+  .pgina-inicial .star-8 {
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    top: 66px;
+    left: 44px;
+  }
+  
+  .pgina-inicial .star-9 {
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    top: 66px;
+    left: 65px;
+  }
+  
+  .pgina-inicial .star-10 {
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    top: 66px;
+    left: 87px;
+  }
+  
+  .pgina-inicial .text-wrapper-10 {
+    position: absolute;
+    width: 38px;
+    top: 66px;
+    left: 110px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .carga-hor-ria-horas-2 {
+    position: absolute;
+    width: 208px;
+    top: 43px;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .text-wrapper-11 {
+    position: absolute;
+    width: 421px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .modulo-aula-2 {
+    position: absolute;
+    top: 9px;
+    left: 84px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .group-6 {
+    position: absolute;
+    width: 392px;
+    height: 309px;
+    top: 0;
+    left: 404px;
+  }
+  
+  .pgina-inicial .group-7 {
+    width: 198px;
+    position: absolute;
+    height: 82px;
+    top: 227px;
+    left: 5px;
+  }
+  
+  .pgina-inicial .modulo-aula-3 {
+    position: absolute;
+    top: 9px;
+    left: 85px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .group-8 {
+    position: absolute;
+    width: 392px;
+    height: 309px;
+    top: 42px;
+    left: 1219px;
+  }
+  
+  .pgina-inicial .overlap-6 {
+    position: relative;
+    width: 396px;
+    height: 309px;
+    left: -4px;
+  }
+  
+  .pgina-inicial .overlap-7 {
+    position: absolute;
+    width: 242px;
+    height: 309px;
+    top: 0;
+    left: 0;
+  }
+  
+  .pgina-inicial .rectangle-9 {
+    width: 205px;
+    position: absolute;
+    height: 228px;
+    top: 0;
+    left: 0;
+  }
+  
+  .pgina-inicial .group-9 {
+    width: 237px;
+    position: absolute;
+    height: 82px;
+    top: 227px;
+    left: 5px;
+  }
+  
+  .pgina-inicial .group-10 {
+    position: absolute;
+    width: 168px;
+    height: 55px;
+    top: 157px;
+    left: 228px;
+  }
+  
+  .pgina-inicial .rectangle-10 {
+    position: absolute;
+    width: 156px;
+    height: 46px;
+    top: 286px;
+    left: 316px;
+  }
+  
+  .pgina-inicial .element-off {
+    position: absolute;
+    width: 58px;
+    top: 4px;
+    left: 6px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .text-wrapper-12 {
+    position: absolute;
+    top: 8px;
+    left: 97px;
+    font-family: "Inter-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #ffffffb2;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: line-through;
+  }
+  
+  .pgina-inicial .text-wrapper-13 {
+    position: absolute;
+    top: 28px;
+    left: 87px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .pgina-inicial .group-11 {
+    position: absolute;
+    width: 1685px;
+    height: 351px;
+    top: 885px;
+    left: 23px;
+  }
+  
+  .pgina-inicial .group-12 {
+    width: 391px;
+    position: absolute;
+    height: 82px;
+    top: 227px;
+    left: 5px;
+  }
+  
+  .pgina-inicial .group-13 {
+    width: 379px;
+    position: absolute;
+    height: 82px;
+    top: 227px;
+    left: 5px;
+  }
+  
+  .pgina-inicial .group-14 {
+    position: absolute;
+    width: 464px;
+    height: 309px;
+    top: 42px;
+    left: 1219px;
+  }
+  
+  .pgina-inicial .overlap-8 {
+    position: relative;
+    width: 474px;
+    height: 309px;
+    left: -4px;
+  }
+  
+  .pgina-inicial .overlap-9 {
+    position: absolute;
+    width: 474px;
+    height: 309px;
+    top: 0;
+    left: 0;
+  }
+  
+  .pgina-inicial .rectangle-11 {
+    width: 202px;
+    position: absolute;
+    height: 228px;
+    top: 0;
+    left: 0;
+  }
+  
+  .pgina-inicial .group-15 {
+    width: 469px;
+    position: absolute;
+    height: 82px;
+    top: 227px;
+    left: 5px;
+  }
+  
+  .pgina-inicial .text-wrapper-14 {
+    position: absolute;
+    width: 127px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pgina-inicial .group-16 {
+    position: absolute;
+    width: 1685px;
+    height: 351px;
+    top: 1268px;
+    left: 23px;
+  }
+  
+  .pgina-inicial .group-17 {
+    position: absolute;
+    width: 1685px;
+    height: 351px;
+    top: 1933px;
+    left: 17px;
+  }
+  
+  .pgina-inicial .rectangle-12 {
+    width: 208px;
+    position: absolute;
+    height: 228px;
+    top: 0;
+    left: 0;
+  }
