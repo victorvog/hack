@@ -1,0 +1,171 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    font-size: 14px;
+}
+
+.sidebar {
+    background-color: #222222;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-left: 5px solid transparent;
+}
+
+.sidebar ul li.active {
+    background: #A25DCC;
+    border-left-color: #A25DCC;
+}
+
+.content {
+    background-color: #313131;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section {
+    background: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group label {
+    font-weight: normal;
+    margin: 0;
+}
+
+input[type="text"], input[type="url"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #666;
+    border: none;
+    color: #FFF;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background-color: #A25DCC;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+}
+
+/* Continuação do CSS anterior */
+
+input[type="email"], input[type="password"] {
+    background: #FFF;
+    color: #333;
+}
+
+h3 {
+    color: #FFF;
+    margin-top: 20px;
+}
+
+a {
+    color: #A25DCC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Continuação do CSS anterior */
+
+.checkbox {
+    margin: 10px 0;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox label {
+    cursor: pointer;
+}
+
+h2 {
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #666;
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #777;
+}
+/* Continuação do CSS anterior */
+
+.checkbox {
+    margin: 10px 0;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox label {
+    cursor: pointer;
+}
+
+h2 {
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #666;
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #777;
+}
+

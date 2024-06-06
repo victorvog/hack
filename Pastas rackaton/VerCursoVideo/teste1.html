@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="estylepag.css">
+    <script src="teste2.js"></script>
+</head>
+<body>
+    <nav class="menu">
+        <a class="logo" href="index.html">
+          <img src="assets/img/logo.svg" />
+          <div>EDUFLIX</div>
+        </a>
+        <div class="side">
+          <div class="options">
+            <a href="#">HOME</a>
+            <a href="#">CURSOS</a>
+            <a href="#">PLANOS</a>
+          </div>
+          <a href="#" class="PFP"><img src="assets/img/pfp.jpg" alt=""></a>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="left-section">
+            <h1>Forma de pagamento?</h1>
+            <div class="payment-box-container">
+                <div class="payment-box" id="box1" onclick="swapColors()">
+                    <img src="Imagens\Cartao.png" alt="">
+                    <h2>Cartão</h2>
+                    <p>Em até 12x</p>
+                </div>
+                <div class="payment-box gray" id="box2" onclick="swapColors()">
+                    <img src="Imagens\Boleto.png" alt="">
+                    <h2>Boleto</h2>
+                    <p>À vista</p>
+                </div>
+            </div>            
+            <input type="text" class="textbox gray" placeholder="Numero do cartão">
+            <input type="text" class="textbox gray" placeholder="Nome do titular do cartão">
+            <input type="text" class="textbox gray" placeholder="CPF do titular do Cartão">
+            <div class="payment-box-container">
+            <input type="text" class="textbox gray" placeholder="Data de expiração">
+            <input type="text" class="textbox gray" placeholder="Código de segurança">
+            </div>
+            <input type="text" class="textbox gray" placeholder="Endereço">
+        </div>
+        <div class="right-section">
+            <h2>Resúmo</h2>
+            <div class="cartaozaobox">
+                <div class="cartaozaoitem"><img src="Imagens\Chip.png" alt="Imagem"></div>
+            </div>
+            <div class="total-value">
+                <span>Valor total</span>
+                <span class="value">R$ 39,00</span>
+            </div>
+            <div class="square">
+                <p>PRO</p>
+                <p>DESCONTO em TODOS os cursos da FALCON</p>
+                <p>Acesso a TODOS os módulos BÁSICOS</p>
+                <p>Acesso a TODOS os CURSOS</p>
+                <p>Acesso a conteúdos SEM ANÚNCIO</p>
+                <p>Certificado</p>
+            </div>
+            <button class="confirm-button">Confirmar pagamento</button>
+        </div>
+    </div>
+</body>
+</html>
